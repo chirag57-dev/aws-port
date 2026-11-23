@@ -1,0 +1,86 @@
+.oss {
+  background: var(--bg-base);
+}
+
+.oss-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-8);
+  margin-bottom: var(--space-12);
+}
+
+@media (min-width: 768px) {
+  .oss-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.oss-activity-card,
+.oss-contributions {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.oss-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.oss-card-body {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: none;
+}
+
+.oss-contrib-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.oss-contrib-item {
+  padding: var(--space-4);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius);
+}
+
+.oss-contrib-header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-2);
+}
+
+.oss-repo-link,
+.oss-repo-name {
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  color: var(--accent);
+}
+
+.oss-contrib-desc {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  max-width: none;
+}
+
+.oss-placeholder-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  max-width: none;
+  margin-top: var(--space-2);
+}
+
+.oss-profile-cta {
+  display: flex;
+  justify-content: center;
+}
